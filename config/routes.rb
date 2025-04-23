@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'sandbox/index'
   devise_for :users
   root "home#index"
   
@@ -10,6 +11,7 @@ Rails.application.routes.draw do
     get 'reports/show'
     get 'reports/destroy'
     get 'users/index'
+    get "sandbox/index"
     get 'users/new'
     get 'users/create'
     get 'users/edit'
