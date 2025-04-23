@@ -1,8 +1,22 @@
 Rails.application.routes.draw do
-  get 'home/index'
   devise_for :users
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  root "home#index"
+  
+  resources :users, only: [:index, :show, :edit, :update, :destroy]
+  resources :reports
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  namespace :admin do
+    get 'reports/index'
+    get 'reports/show'
+    get 'reports/destroy'
+    get 'users/index'
+    get 'users/new'
+    get 'users/create'
+    get 'users/edit'
+    get 'users/update'
+    get 'users/destroy'
+    root "dashboard#index"
+    resources :users, only: [:index, :new, :create, :edit, :update, :destroy]
+    resources :reports, only: [:index, :show, :destroy]
+  end
 end
