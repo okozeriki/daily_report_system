@@ -4,14 +4,14 @@ title: "[Task] タスク内容を簡潔に"
 labels: ["task"]
 body:
   - type: textarea
-    id: goal
+    id: task_goal
     attributes:
       label: 目的
       description: なぜこのタスクが必要なのかを記述
       placeholder: このタスクの目的／背景
 
   - type: textarea
-    id: content
+    id: task_content
     attributes:
       label: 作業内容
       description: 実施する作業内容を箇条書きで書いてください
@@ -20,13 +20,13 @@ body:
         - テストコードの追加
 
   - type: textarea
-    id: impact
+    id: task_impact
     attributes:
       label: 影響範囲
       description: この作業が影響を与える範囲（例：ログイン処理、DB構造）
 
   - type: input
-    id: estimate
+    id: task_estimate
     attributes:
       label: 見積もり（任意）
       description: ストーリーポイントなどの見積もり
