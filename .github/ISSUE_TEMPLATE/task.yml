@@ -1,0 +1,33 @@
+name: 🛠 実装タスク
+description: 実装・調査・インフラなどの作業を記述してください
+title: "[Task] タスク内容を簡潔に"
+labels: ["task"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: 目的
+      description: なぜこのタスクが必要なのかを記述
+      placeholder: このタスクの目的／背景
+
+  - type: textarea
+    id: content
+    attributes:
+      label: 作業内容
+      description: 実施する作業内容を箇条書きで書いてください
+      placeholder: |
+        - コントローラの修正
+        - テストコードの追加
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: 影響範囲
+      description: この作業が影響を与える範囲（例：ログイン処理、DB構造）
+
+  - type: input
+    id: estimate
+    attributes:
+      label: 見積もり（任意）
+      description: ストーリーポイントなどの見積もり
+      placeholder: 例: 3SP
