@@ -30,4 +30,4 @@ body:
     attributes:
       label: 見積もり（任意）
       description: ストーリーポイントなどの見積もり
-      placeholder: 例: 3SP
+      placeholder: "例: 3SP"
