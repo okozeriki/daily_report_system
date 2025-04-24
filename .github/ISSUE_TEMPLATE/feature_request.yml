@@ -1,0 +1,36 @@
+name: 💡 機能追加・改善提案
+description: 新しい機能や改善の提案はこちら
+title: "[Feature] 提案内容を簡潔に"
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: 概要
+      description: 提案したい機能や改善点を説明してください
+      placeholder: この機能を追加したい／この点を改善したい
+    validations:
+      required: true
+
+  - type: textarea
+    id: user_story
+    attributes:
+      label: ユーザーストーリー
+      description: ユーザーストーリー形式で書いてください（As a ～）
+      placeholder: As a user, I want to ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 受け入れ条件
+      description: このIssueが完了したとみなせる基準（Definition of Done）
+    validations:
+      required: false
+
+  - type: textarea
+    id: reference
+    attributes:
+      label: 関連資料
+      description: 参考になるリンクやスクショなど
